@@ -70,7 +70,7 @@ gridItems.forEach((item, index) => {
                         }, 5000);
                     }
                     if (enteredCodes.length === 21) {
-                        messageElement.textContent = 'Özel mesajınız!';
+                        messageElement.textContent = 'İşte Sana Özel İndirim Kodun Sevgilim: ';
                         messageContainer.style.display = 'block';
                     }
                 } else {
