@@ -7,7 +7,7 @@ const closeCodeInputButton = document.getElementById('close-code-input');
 const messageContainer = document.getElementById('message-container');
 const messageElement = document.getElementById('message');
 
-const images = ['images/resim1.jpg', 'images/resim2.jpg', 'images/resim3.jpg', 'images/resim4.jpg']; // Resim yollarını güncelledik
+const images = ['images/resim1.jpg', 'images/resim2.jpg', 'images/resim3.jpg', 'images/resim4.jpg'];
 let currentImageIndex = 0;
 const codes = [
     'ASK', 'GUL', 'KALP', 'HAYAL', 'GUNES', 'AY', 'YILDIZ',
@@ -65,12 +65,10 @@ gridItems.forEach((item, index) => {
                     codeInputContainer.style.display = 'none';
                     availableIndex++;
                     if (availableIndex < gridItems.length) {
-                        setTimeout(() => {
-                            updateGridItems();
-                        }, 5000);
+                        updateGridItems(); // Anında kutu açma
                     }
                     if (enteredCodes.length === 21) {
-                        messageElement.textContent = 'İşte Sana Özel İndirim Kodun Sevgilim: ';
+                        messageElement.textContent = 'İ Love U';
                         messageContainer.style.display = 'block';
                     }
                 } else {
