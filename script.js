@@ -68,7 +68,7 @@ gridItems.forEach((item, index) => {
                         updateGridItems(); // Anında kutu açma
                     }
                     if (enteredCodes.length === 21) {
-                        messageElement.textContent = 'İ Love U';
+                        messageElement.textContent = 'Özel mesajınız!';
                         messageContainer.style.display = 'block';
                     }
                 } else {
